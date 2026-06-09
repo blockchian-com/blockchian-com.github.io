@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "blockchian-com",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blockchain-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://blockchian-com.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://blockchian-com.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "cwd5j39zpg",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blockchain Explorer - Bitcoin Tracker | Home",
+        "meta_descr": "Blockchain Technology, its key Features, Benefits, Challenges, and Real-World Applications. Blockchain is transparent, and Decentralized Digital Transactions.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.blockchain.com/\"><img src=\"@PROJECT_PATH@/assets/images/blockchain-p1.png\" alt=\"blockchain\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vm2XYFc74u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-1"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain</a> Explorer - Bitcoin Tracker | Home</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>Technology: Revolutionizing the Digital World</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Introduction :&gt;</b><br>Blockchain is one of the most transformative technologies of the 21st century. Originally developed as the underlying technology for cryptocurrencies such as Bitcoin, <a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>has evolved into a powerful tool with applications across finance, healthcare, supply chain management, government services, and many other industries. Its ability to provide transparency, security, and decentralization has made it a cornerstone of digital innovation.<br><br><b>What Is Blockchain?</b><br>A <a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>is a distributed digital ledger that records transactions across a network of computers. Instead of storing information in a single centralized database, blockchain distributes data across multiple nodes, making it highly secure and resistant to tampering.<br><br>Information is stored in blocks, which are linked together in chronological order to form a chain. Each block contains transaction data, a timestamp, and a unique cryptographic hash that connects it to the previous block. This structure ensures that once information is recorded, it becomes extremely difficult to alter.<br><br><b>How Blockchain Works</b><br>The blockchain process typically follows these steps:<br><b>1. Transaction Initiation:</b> A user requests a transaction.<br><b>2. Verification:</b> Network participants, known as nodes, validate the transaction through consensus mechanisms.<br><b>3. Block Creation:</b> Verified transactions are grouped into a new block.<br><b>4. Block Addition:</b> The new block is added to the existing blockchain.<br><b>5. Record Update:</b> The updated ledger is shared across all network participants.<br><b>\\\\</b> This decentralized approach eliminates the need for intermediaries and increases trust among participants.<br><br><b>Key Features of Blockchain<br>1. Decentralization ://</b><br>Unlike traditional systems controlled by a central authority, <a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>operates through a distributed network. This reduces the risk of a single point of failure and enhances system reliability.<br><b>2. Transparency ://</b><br>All authorized participants can view the transaction history, promoting accountability and trust.<br><b>3. Security ://</b><br><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>uses advanced cryptographic techniques to protect data. Once information is added to the chain, altering it requires significant computational power, making fraud extremely difficult.<br><b>4. Immutability ://</b><br>Records stored on a blockchain cannot be easily modified or deleted, ensuring data integrity.<br><b>5. Efficiency ://</b><br>By removing intermediaries and automating processes through smart contracts, blockchain can reduce costs and improve transaction speed.<br><br><b>Applications of Blockchain<br>Financial Services :&gt;</b><br><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>enables secure and transparent financial transactions, reducing processing times and costs. It powers cryptocurrencies, digital payments, and decentralized finance (<b>DeFi</b>) platforms.<br><b>Supply Chain Management :&gt;</b><br>Companies use Blockchain to track products from manufacturing to delivery. This improves transparency, reduces fraud, and enhances product traceability.<br><b>Healthcare :&gt;</b><br>Medical records can be securely stored and shared using blockchain, improving patient privacy and data accessibility.<br><b>Voting Systems :&gt;<br></b><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain</a>-based voting systems can increase election security and transparency while reducing the risk of manipulation.<br><b>Real Estate :&gt;</b><br>Property transactions can be streamlined through blockchain by maintaining secure ownership records and automating contract execution.<br><br><b>Advantages of Blockchain<br>1.</b>&nbsp; Enhanced security and data protection&nbsp; &nbsp; &nbsp; &nbsp;<b>2.</b> Increased transparency and trust<br><b>3.</b> Reduced operational costs&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>4.</b> Faster transaction processing<br><b>5.</b> Improved traceability and accountability&nbsp; &nbsp; &nbsp; <b>6.</b> Greater efficiency through automation<br><br><b>Challenges and Limitations :\\\\</b><br>Despite its benefits, blockchain faces several challenges:<br><b>:&gt;</b>&nbsp; Scalability issues in handling large transaction volumes<br><b>:&gt;</b>&nbsp; High energy consumption in some consensus mechanisms<br><b>:&gt;</b>&nbsp; Regulatory uncertainty in many countries<br><b>:&gt;</b>&nbsp; Integration difficulties with existing systems<br><b>:&gt;</b>&nbsp; Limited public understanding and adoption<br>Addressing these challenges is essential for widespread implementation.<br><br><b>Future of Blockchain ://&nbsp;</b><br>The future of <a href=\"https://www.blockchain.com/\" class=\"text-primary\">blockchain </a>appears promising as organizations continue to explore its potential. Emerging developments such as decentralized applications (<b>DApps</b>), smart contracts, central bank digital currencies (<b>CBDCs</b>), and blockchain-based identity systems are expected to drive innovation. As technology matures, blockchain is likely to become a fundamental component of digital infrastructure worldwide.<br><br><b>Conclusion ://</b><br><a href=\"https://www.blockchain.com/\" class=\"text-primary\">Blockchain </a>technology represents a significant advancement in the way data is stored, shared, and secured. By offering decentralization, transparency, and enhanced security, it has the potential to transform numerous industries and redefine digital trust. Although challenges remain, continued research, innovation, and adoption are paving the way for a more efficient and secure digital future.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vm2XZGlKnN",
+          "_anchor": "article07-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
